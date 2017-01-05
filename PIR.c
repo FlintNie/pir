@@ -2,15 +2,15 @@
 int model=0;
 int main()
 {
-	while(model == 0)	  // 常开
+	while(model == 0)	  // 
 	{
 		P0=0xff;	
 	}
-	while(model == 1)	  // 常闭
+	while(model == 1)	  //
 	{
 		P0=0x00;	
 	}
-	while(model == 2)	   //PIR关灯模式
+	while(model == 2)	   //
 	{
 		if(P1==0x01)
 		{
@@ -22,7 +22,7 @@ int main()
 		}
 
 	}
-	while(model == 3)	 //PIR低亮度模式
+	while(model == 3)	 //PIR
 	{
 		if(P1==0x01)
 		{
